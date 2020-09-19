@@ -1,6 +1,6 @@
 import { Component } from "react";
 declare type Props = {
-    selected: string;
+    selected?: string;
     values: string[];
     onChange: (selectedValue: string) => any;
     disabled?: boolean;

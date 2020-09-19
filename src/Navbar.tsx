@@ -2,7 +2,7 @@ import React, { Component, HTMLProps } from "react";
 import { Button } from "./index";
 
 type Props = {
-  selected: string;
+  selected?: string;
   values: string[];
   onChange: (selectedValue: string) => any;
   disabled?: boolean;
