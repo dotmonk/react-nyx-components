@@ -10,6 +10,7 @@ import Tooltip from "./Tooltip";
 import Checkbox from "./Checkbox";
 import Radiobutton from "./Radiobutton";
 import modal from "./modal";
+import Navbar from "./Navbar";
 
 export {
   modal,
@@ -23,5 +24,6 @@ export {
   Loading,
   Checkbox,
   Radiobutton,
-  Tooltip
+  Tooltip,
+  Navbar,
 };

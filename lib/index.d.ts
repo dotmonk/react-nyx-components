@@ -10,5 +10,6 @@ import Tooltip from "./Tooltip";
 import Checkbox from "./Checkbox";
 import Radiobutton from "./Radiobutton";
 import modal from "./modal";
-export { modal, Button, Input, Select, Textarea, Panel, Label, Link, Loading, Checkbox, Radiobutton, Tooltip };
+import Navbar from "./Navbar";
+export { modal, Button, Input, Select, Textarea, Panel, Label, Link, Loading, Checkbox, Radiobutton, Tooltip, Navbar, };
 //# sourceMappingURL=index.d.ts.map

@@ -12,7 +12,8 @@ import {
   Radiobutton,
   Checkbox,
   Link,
-  Tooltip
+  Tooltip,
+  Navbar,
 } from "../src";
 
 const testColors = ["standard", "bright", "success", "error"];
@@ -37,33 +38,33 @@ class NyxTest extends Component<Props, State> {
         <h2>React Nyx Components</h2>
         <h3>Button</h3>
         <h4>Normal buttons</h4>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <Button key={color} color={color}>
             Test {color}
           </Button>
         ))}
         <br />
         <h4>Active buttons</h4>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <Button key={color} color={color} active={true}>
             Test {color}
           </Button>
         ))}
         <br />
         <h4>Disabled buttons</h4>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <Button key={color} color={color} disabled={true}>
             Test {color}
           </Button>
         ))}
         <h3>Input</h3>
         <h4>Normal input</h4>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <Input key={color} color={color} defaultValue={`Test ${color}`} />
         ))}
         <br />
         <h4>Disabled input</h4>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <Input
             key={color}
             color={color}
@@ -74,20 +75,20 @@ class NyxTest extends Component<Props, State> {
         <br />
         <h3>Select</h3>
         <h4>Normal Select</h4>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <Select
             color={color}
             key={color}
             onChange={(value: any) => alert(value)}
             options={[
               { name: "Option #1", value: "option1" },
-              { name: "Option #2", value: "option2" }
+              { name: "Option #2", value: "option2" },
             ]}
           />
         ))}
         <br />
         <h4>Normal Select with selected item</h4>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <Select
             color={color}
             key={color}
@@ -95,7 +96,7 @@ class NyxTest extends Component<Props, State> {
             value="option2"
             options={[
               { name: "Option #1", value: "option1" },
-              { name: "Option #2", value: "option2" }
+              { name: "Option #2", value: "option2" },
             ]}
           />
         ))}
@@ -104,7 +105,7 @@ class NyxTest extends Component<Props, State> {
         <Select
           onChange={(value: any) =>
             (this.state = {
-              selectPropValue: value
+              selectPropValue: value,
             })
           }
           value={this.state.selectPropValue}
@@ -112,7 +113,7 @@ class NyxTest extends Component<Props, State> {
           options={[
             { name: "Option #1", value: "option1" },
             { name: "Option #2", value: "option2" },
-            { name: "Option #3", value: "option3" }
+            { name: "Option #3", value: "option3" },
           ]}
         />
         <br />
@@ -126,7 +127,7 @@ class NyxTest extends Component<Props, State> {
                 Some text
                 <Button>A button</Button>
               </Panel>,
-              { callback: result => console.log(result) }
+              { callback: (result) => console.log(result) }
             )
           }
         >
@@ -135,7 +136,7 @@ class NyxTest extends Component<Props, State> {
         <Button
           onClick={() =>
             modal.alert("This is the alert message.", {
-              callback: result => console.log(result)
+              callback: (result) => console.log(result),
             })
           }
         >
@@ -144,7 +145,7 @@ class NyxTest extends Component<Props, State> {
         <Button
           onClick={() =>
             modal.confirm("This is the alert message?", {
-              callback: result => console.log(result)
+              callback: (result) => console.log(result),
             })
           }
         >
@@ -153,7 +154,7 @@ class NyxTest extends Component<Props, State> {
         <Button
           onClick={() =>
             modal.input("What is your message?", {
-              callback: result => console.log(result)
+              callback: (result) => console.log(result),
             })
           }
         >
@@ -161,12 +162,12 @@ class NyxTest extends Component<Props, State> {
         </Button>
         <br />
         <h3>Textarea</h3>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <Textarea key={color} color={color} defaultValue="Test" />
         ))}
         <br />
         <h3>Panel</h3>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <Panel key={color} color={color}>
             <h5>Test</h5>
             Text for testing
@@ -180,14 +181,14 @@ class NyxTest extends Component<Props, State> {
         ))}
         <br />
         <h3>Label</h3>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <Label key={color} color={color}>
             {color}
           </Label>
         ))}
         <br />
         <h3>Loading</h3>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <Loading key={color} color={color}>
             Loading...
           </Loading>
@@ -195,14 +196,14 @@ class NyxTest extends Component<Props, State> {
         <br />
         <h3>Tooltip</h3>
         <div style={{ textAlign: "center" }}>
-          {testColors.map(color => (
+          {testColors.map((color) => (
             <Tooltip color={color} tooltip={"String with text"}>
               <Label color={color}>Hover me {color}</Label>
             </Tooltip>
           ))}
         </div>
         <div style={{ textAlign: "center" }}>
-          {testColors.map(color => (
+          {testColors.map((color) => (
             <Tooltip
               color={color}
               tooltip={
@@ -217,22 +218,33 @@ class NyxTest extends Component<Props, State> {
         </div>
         <br />
         <h3>Checkbox</h3>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <span key={color}>
             <Checkbox color={color} /> A Checkbox {color}
             <br />
           </span>
         ))}
         <h3>Radiobutton</h3>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <span key={color}>
             <Radiobutton color={color} /> A Radiobutton {color}
             <br />
           </span>
         ))}
         <h3>Link</h3>
-        {testColors.map(color => (
+        {testColors.map((color) => (
           <Link color={color}>A Link {color}</Link>
+        ))}
+
+        <br />
+        <h3>Navbar</h3>
+        {testColors.map((color) => (
+          <Navbar
+            selected={"A"}
+            values={["A", "B", "C", "D"]}
+            color={color}
+            onChange={(selectedValue) => alert(selectedValue)}
+          />
         ))}
 
         <h3>Combination experiments</h3>
@@ -242,14 +254,14 @@ class NyxTest extends Component<Props, State> {
               Test
               <Button
                 style={{
-                  float: "right"
+                  float: "right",
                 }}
               >
                 Test 1
               </Button>
               <Button
                 style={{
-                  float: "right"
+                  float: "right",
                 }}
               >
                 Test 2<Label color="success">status</Label>
@@ -257,7 +269,7 @@ class NyxTest extends Component<Props, State> {
               <Button
                 color="error"
                 style={{
-                  float: "right"
+                  float: "right",
                 }}
               >
                 Test 3
