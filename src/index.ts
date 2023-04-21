@@ -6,6 +6,7 @@ import Panel from "./Panel";
 import Label from "./Label";
 import Link from "./Link";
 import Loading from "./Loading";
+import Flashing from "./Flashing";
 import Tooltip from "./Tooltip";
 import Checkbox from "./Checkbox";
 import Radiobutton from "./Radiobutton";
@@ -22,6 +23,7 @@ export {
   Label,
   Link,
   Loading,
+  Flashing,
   Checkbox,
   Radiobutton,
   Tooltip,

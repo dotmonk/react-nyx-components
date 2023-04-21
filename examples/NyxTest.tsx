@@ -9,6 +9,7 @@ import {
   Textarea,
   Label,
   Loading,
+  Flashing,
   Radiobutton,
   Checkbox,
   Link,
@@ -192,6 +193,13 @@ class NyxTest extends Component<Props, State> {
           <Loading key={color} color={color}>
             Loading...
           </Loading>
+        ))}
+        <br />
+        <h3>Flashing</h3>
+        {testColors.map((color) => (
+          <Flashing key={color} color={color}>
+            Flashing...
+          </Flashing>
         ))}
         <br />
         <h3>Tooltip</h3>
