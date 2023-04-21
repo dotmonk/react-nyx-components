@@ -1,6 +1,6 @@
 {
   "name": "react-nyx-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Components for the Nyx css theme",
   "main": "lib/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JustZisGuy/react-nyx-components.git"
+    "url": "git+https://github.com/dotmonk/react-nyx-components.git"
   },
   "keywords": [
     "React",
@@ -19,14 +19,14 @@
   "peerDependencies": {
     "react": ">=16.7.0",
     "react-dom": ">=16.7.0",
-    "css-nyx-theme": "https://github.com/JustZisGuy/css-nyx-theme.git#master"
+    "css-nyx-theme": "https://github.com/dotmonk/css-nyx-theme.git#master"
   },
   "author": "Magnus Weinberg <magnus.weinberg@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JustZisGuy/react-nyx-components/issues"
+    "url": "https://github.com/dotmonk/react-nyx-components/issues"
   },
-  "homepage": "https://github.com/JustZisGuy/react-nyx-components#readme",
+  "homepage": "https://github.com/dotmonk/react-nyx-components#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
@@ -35,7 +35,7 @@
     "@types/react-dom": "^16.8.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "css-nyx-theme": "https://github.com/JustZisGuy/css-nyx-theme.git#master",
+    "css-nyx-theme": "https://github.com/dotmonk/css-nyx-theme.git#master",
     "eslint": "^5.11.1",
     "parcel": "^1.12.3",
     "parcel-bundler": "^1.12.3",
