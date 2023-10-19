@@ -37,8 +37,8 @@
     "babel-preset-react": "^6.24.1",
     "css-nyx-theme": "https://github.com/dotmonk/css-nyx-theme.git#master",
     "eslint": "^5.11.1",
-    "parcel": "^1.12.3",
-    "parcel-bundler": "^1.12.3",
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.5",
     "react": "^16.7.0",
     "react-dom": "^16.8.6",
     "typescript": "^3.5.3"
